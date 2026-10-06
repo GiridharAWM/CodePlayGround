@@ -7,10 +7,10 @@ WORKDIR /usr/local/tomcat
 RUN rm -rf webapps/*
 
 # Copy WebContent into ROOT web application
-COPY CodeVisualizationPlayground/WebContent/ /usr/local/tomcat/webapps/ROOT/
+COPY ["CodeVisualizationPlayground/WebContent/", "/usr/local/tomcat/webapps/ROOT/"]
 
-# Copy Java source code
-COPY "CodeVisualizationPlayground/Java Resources/src/" /usr/local/tomcat/src/
+# Copy Java source code (JSON array syntax handles spaces in folder name)
+COPY ["CodeVisualizationPlayground/Java Resources/src/", "/usr/local/tomcat/src/"]
 
 # Compile all Java source files into WEB-INF/classes
 RUN mkdir -p /usr/local/tomcat/webapps/ROOT/WEB-INF/classes && \
