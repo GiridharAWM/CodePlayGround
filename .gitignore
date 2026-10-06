@@ -1,0 +1,13 @@
+# Compiled Java class files
+*.class
+WebContent/WEB-INF/classes/
+CodeVisualizationPlayground/WebContent/WEB-INF/classes/
+bin/
+
+# Logs and runtime artifacts
+*.log
+temp/
+
+# OS generated files
+Thumbs.db
+.DS_Store

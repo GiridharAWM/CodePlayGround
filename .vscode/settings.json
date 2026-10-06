@@ -1,0 +1,20 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.jdt.ls.java.home": "C:\\Users\\kgoku\\.antigravity-ide\\extensions\\redhat.java-1.56.0-win32-x64\\jre\\21.0.12.1-win32-x86_64",
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-21",
+            "path": "C:\\Users\\kgoku\\.antigravity-ide\\extensions\\redhat.java-1.56.0-win32-x64\\jre\\21.0.12.1-win32-x86_64",
+            "default": true
+        }
+    ],
+    "java.project.sourcePaths": [
+        "CodeVisualizationPlayground/Java Resources/src",
+        "CodeVisualizationPlayground/Selenium"
+    ],
+    "java.project.outputPath": "CodeVisualizationPlayground/WebContent/WEB-INF/classes",
+    "java.project.referencedLibraries": [
+        "CodeVisualizationPlayground/WebContent/WEB-INF/lib/*.jar",
+        "CodeVisualizationPlayground/Selenium/lib/*.jar"
+    ]
+}

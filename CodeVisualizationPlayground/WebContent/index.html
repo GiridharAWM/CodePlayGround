@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Visualization Playground - Write. Run. Visualize.</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="brand">
+                <div class="brand-icon">&lt;/&gt;</div>
+                <span>Code Visualizer</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="playground.jsp">Playground</a></li>
+                <li><a href="concepts.jsp">Concepts (XML)</a></li>
+                <li><a href="saved-programs.jsp">Saved Programs</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="themeToggleBtn" class="btn-icon" title="Toggle Theme">☀️</button>
+                <a href="login.jsp" class="btn btn-secondary">Login</a>
+                <a href="register.jsp" class="btn btn-primary">Register</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero">
+            <div class="hero-badge">⚡ Real Server-Side Java Execution Engine</div>
+            <h1 class="hero-title">CODE VISUALIZATION PLAYGROUND</h1>
+            <div class="hero-subtitle">Write. Run. Visualize.</div>
+            <p class="hero-description">
+                Write arbitrary Java code, compile and execute it on a sandboxed server, and explore its execution step-by-step through interactive memory and call-stack visualizations.
+            </p>
+            <div class="hero-buttons">
+                <a href="playground.jsp" class="btn btn-primary" style="font-size: 1.05rem; padding: 0.75rem 1.75rem;">
+                    🚀 START VISUALIZING
+                </a>
+                <a href="login.jsp" class="btn btn-secondary" style="font-size: 1.05rem; padding: 0.75rem 1.75rem;">
+                    🔑 LOGIN
+                </a>
+            </div>
+        </section>
+
+        <!-- What is Code Visualization -->
+        <section class="section-container">
+            <div class="section-header">
+                <div class="section-tag">Core Objective</div>
+                <h2 class="section-title">WHAT IS CODE VISUALIZATION?</h2>
+                <p class="section-desc">
+                    Unlike static visualizers that rely on brittle regex and pattern matching, Code Visualization Playground is a true compile-and-execute platform.
+                </p>
+            </div>
+
+            <div class="grid-3">
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3>Trace-Driven Architecture</h3>
+                    <p>Every step you see originates from actual Java runtime instrumentation. Local variables, arrays, recursion depth, and conditions reflect the JVM's real state.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Sandboxed Subprocess Execution</h3>
+                    <p>User programs execute in isolated temporary workspaces with hard timeout limits, preventing infinite loops and securing the host servlet container.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎓</div>
+                    <h3>Pedagogical Clarity</h3>
+                    <p>Step through execution event by event (Next, Previous, Reset, Auto-play) with synchronized source code line illumination and state inspection.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="section-container" style="background-color: rgba(255, 255, 255, 0.01); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+            <div class="section-header">
+                <div class="section-tag">Lifecycle Workflow</div>
+                <h2 class="section-title">HOW IT WORKS</h2>
+                <p class="section-desc">
+                    From source code entry to browser visualization in six synchronized stages.
+                </p>
+            </div>
+
+            <div class="pipeline-steps">
+                <div class="pipeline-step">
+                    <div class="step-num">1</div>
+                    <h4>Source Input</h4>
+                    <p>User submits arbitrary Java code via browser AJAX</p>
+                </div>
+                <div class="pipeline-step">
+                    <div class="step-num">2</div>
+                    <h4>Instrumentation</h4>
+                    <p>Server injects non-intrusive trace hooks</p>
+                </div>
+                <div class="pipeline-step">
+                    <div class="step-num">3</div>
+                    <h4>Javac Compilation</h4>
+                    <p>Server compiles code in isolated temp workspace</p>
+                </div>
+                <div class="pipeline-step">
+                    <div class="step-num">4</div>
+                    <h4>Execution</h4>
+                    <p>Sandboxed Java process runs with timeout guard</p>
+                </div>
+                <div class="pipeline-step">
+                    <div class="step-num">5</div>
+                    <h4>Trace Capture</h4>
+                    <p>Runtime events collected into structured JSON</p>
+                </div>
+                <div class="pipeline-step">
+                    <div class="step-num">6</div>
+                    <h4>Visualization</h4>
+                    <p>Frontend renders memory, arrays, and call stacks</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Supported Java Concepts -->
+        <section class="section-container">
+            <div class="section-header">
+                <div class="section-tag">Versatile Coverage</div>
+                <h2 class="section-title">SUPPORTED JAVA CONCEPTS</h2>
+                <p class="section-desc">
+                    From basic primitives to object-oriented structures and recursive algorithms.
+                </p>
+            </div>
+
+            <div class="grid-4">
+                <div class="feature-card">
+                    <div class="feature-icon">📦</div>
+                    <h3>Variables &amp; Types</h3>
+                    <p>Primitives, Strings, arithmetic operations, and sequential reassignment tracking.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Arrays &amp; Indexing</h3>
+                    <p>Contiguous memory block diagrams with visual element access glow and updates.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔀</div>
+                    <h3>Control Flow</h3>
+                    <p>Condition evaluation for if/else and switch branches showing boolean outcomes.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔁</div>
+                    <h3>Loops &amp; Iteration</h3>
+                    <p>For, while, do-while, and nested loop cycle progression with live counter badges.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📞</div>
+                    <h3>Methods &amp; Stack</h3>
+                    <p>Call stack frame construction, parameter delivery, and typed return value captures.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Recursion Frames</h3>
+                    <p>Call tree unwinding for classic recursive algorithms like Factorial and Fibonacci.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏛️</div>
+                    <h3>Classes &amp; Objects</h3>
+                    <p>Heap instance creation, constructor execution, and instance variable tracking.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚠️</div>
+                    <h3>Exceptions</h3>
+                    <p>Structured runtime exception alerts with class type, source line, and messages.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Showcase -->
+        <section class="section-container" style="border-top: 1px solid var(--border-color);">
+            <div class="section-header">
+                <div class="section-tag">Interactive Suite</div>
+                <h2 class="section-title">FEATURES</h2>
+                <p class="section-desc">
+                    Engineered for students, instructors, and developers seeking deep conceptual understanding.
+                </p>
+            </div>
+
+            <div class="grid-3">
+                <div class="feature-card">
+                    <div class="feature-icon">🎮</div>
+                    <h3>Playback Control</h3>
+                    <p>Step forward, rewind backward, reset, or engage automated playback at adjustable speeds (0.5s, 1s, 2s).</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💾</div>
+                    <h3>Cloud Program Storage</h3>
+                    <p>Authenticated developers can save, load, and delete programs directly backed by MySQL and JDBC.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📄</div>
+                    <h3>XML DOM Integration</h3>
+                    <p>Core curriculum and conceptual models are loaded dynamically from XML using native W3C DOM APIs.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer style="border-top: 1px solid var(--border-color); padding: 2rem; text-align: center; color: var(--text-muted); font-size: 0.85rem;">
+        <p>Code Visualization Playground &bull; Built with HTML, CSS, JavaScript, Java Servlets, JSP, JDBC, MySQL, XML DOM &bull; Strictly Zero Third-Party Frameworks.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

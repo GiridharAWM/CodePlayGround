@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="Java Resources/src"/>
+	<classpathentry kind="src" path="Selenium"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jsp-api.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/mysql-connector-j-8.3.0.jar"/>
+	<classpathentry kind="lib" path="Selenium/lib/guava-33.1.0-jre.jar"/>
+	<classpathentry kind="lib" path="Selenium/lib/selenium-api-4.20.0.jar"/>
+	<classpathentry kind="lib" path="Selenium/lib/selenium-chrome-driver-4.20.0.jar"/>
+	<classpathentry kind="lib" path="Selenium/lib/selenium-chromium-driver-4.20.0.jar"/>
+	<classpathentry kind="lib" path="Selenium/lib/selenium-remote-driver-4.20.0.jar"/>
+	<classpathentry kind="lib" path="Selenium/lib/selenium-support-4.20.0.jar"/>
+	<classpathentry kind="lib" path="Selenium/lib/byte-buddy-1.14.14.jar"/>
+	<classpathentry kind="lib" path="Selenium/lib/commons-exec-1.4.0.jar"/>
+	<classpathentry kind="lib" path="Selenium/lib/failsafe-3.3.2.jar"/>
+	<classpathentry kind="lib" path="Selenium/lib/opentelemetry-api-1.37.0.jar"/>
+	<classpathentry kind="lib" path="Selenium/lib/opentelemetry-context-1.37.0.jar"/>
+	<classpathentry kind="lib" path="Selenium/lib/opentelemetry-sdk-1.37.0.jar"/>
+	<classpathentry kind="lib" path="Selenium/lib/opentelemetry-sdk-common-1.37.0.jar"/>
+	<classpathentry kind="lib" path="Selenium/lib/opentelemetry-sdk-trace-1.37.0.jar"/>
+	<classpathentry kind="lib" path="Selenium/lib/selenium-http-4.20.0.jar"/>
+	<classpathentry kind="lib" path="Selenium/lib/selenium-java-4.20.0.jar"/>
+	<classpathentry kind="lib" path="Selenium/lib/selenium-json-4.20.0.jar"/>
+	<classpathentry kind="lib" path="Selenium/lib/selenium-manager-4.20.0.jar"/>
+	<classpathentry kind="lib" path="Selenium/lib/selenium-os-4.20.0.jar"/>
+	<classpathentry kind="output" path="WebContent/WEB-INF/classes"/>
+</classpath>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<visualization>
+    <concept name="variable">
+        <category>Fundamentals</category>
+        <title>Variables &amp; State</title>
+        <description>Represents a named storage location in memory holding a primitive or reference value that can change during execution.</description>
+        <sampleCode><![CDATA[int a = 10;
+int b = 20;
+int sum = a + b;
+System.out.println(sum);]]></sampleCode>
+    </concept>
+
+    <concept name="array">
+        <category>Data Structures</category>
+        <title>Arrays &amp; Indexing</title>
+        <description>Represents contiguous memory blocks holding multiple items of identical type, accessed through zero-based indexing.</description>
+        <sampleCode><![CDATA[int[] numbers = {10, 20, 30, 40, 50};
+for(int i = 0; i < numbers.length; i++) {
+    System.out.println(numbers[i]);
+}]]></sampleCode>
+    </concept>
+
+    <concept name="condition">
+        <category>Control Flow</category>
+        <title>Conditional Branching</title>
+        <description>Represents conditional program execution evaluating boolean expressions to select between alternative execution paths.</description>
+        <sampleCode><![CDATA[int n = 5;
+if (n > 0) {
+    System.out.println("Positive");
+} else {
+    System.out.println("Negative");
+}]]></sampleCode>
+    </concept>
+
+    <concept name="loop">
+        <category>Control Flow</category>
+        <title>Loops &amp; Iteration</title>
+        <description>Represents repeated block execution (for, while, do-while, nested loops) until a termination condition is met.</description>
+        <sampleCode><![CDATA[int count = 0;
+while (count < 3) {
+    System.out.println("Loop step: " + count);
+    count++;
+}]]></sampleCode>
+    </concept>
+
+    <concept name="method">
+        <category>Modular Logic</category>
+        <title>Methods &amp; Stack Frames</title>
+        <description>Represents named reusable logic blocks with formal parameters, isolated local scopes, and typed return values.</description>
+        <sampleCode><![CDATA[static int multiply(int x, int y) {
+    return x * y;
+}
+public static void main(String[] args) {
+    int res = multiply(4, 5);
+    System.out.println(res);
+}]]></sampleCode>
+    </concept>
+
+    <concept name="recursion">
+        <category>Advanced Logic</category>
+        <title>Recursion &amp; Call Stack</title>
+        <description>Represents self-invoking functions building an active stack frame hierarchy until reaching a base termination case.</description>
+        <sampleCode><![CDATA[static int factorial(int n) {
+    if (n <= 1) return 1;
+    return n * factorial(n - 1);
+}
+public static void main(String[] args) {
+    int result = factorial(5);
+    System.out.println(result);
+}]]></sampleCode>
+    </concept>
+
+    <concept name="object">
+        <category>Object Orientation</category>
+        <title>Classes &amp; Objects</title>
+        <description>Represents instance allocation on the heap, constructor initialization, state encapsulation, and instance method invocation.</description>
+        <sampleCode><![CDATA[class Counter {
+    int count = 0;
+    void increment() { count++; }
+}
+public static void main(String[] args) {
+    Counter c = new Counter();
+    c.increment();
+    System.out.println(c.count);
+}]]></sampleCode>
+    </concept>
+
+    <concept name="exception">
+        <category>Error Handling</category>
+        <title>Exception Handling</title>
+        <description>Represents runtime anomalies, stack-unwinding, and structured recovery using try, catch, and finally blocks.</description>
+        <sampleCode><![CDATA[try {
+    int x = 10 / 0;
+} catch (ArithmeticException e) {
+    System.out.println("Caught: " + e.getMessage());
+}]]></sampleCode>
+    </concept>
+</visualization>
